@@ -114,13 +114,13 @@ body {
 
 .dpad {
     position: absolute; /* Change position to relative */
-    bottom: 15px; /* Reset bottom position */
+    bottom: 5px; /* Reset bottom position */
     left: 50%;
     transform: translateX(-50%);
     display: grid;
     grid-template-columns: 50px 50px 50px;
     gap: 10px;
-    margin-top: 10px; /* Space between board and dpad */
+    /* margin-top: 10px; Space between board and dpad */
 }
 
 .dpad-button {

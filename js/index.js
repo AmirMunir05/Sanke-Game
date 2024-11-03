@@ -137,15 +137,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // D-pad Controls for On-screen Buttons
     document.getElementById('up').addEventListener('click', () => {
         if (inputDir.y !== 1) inputDir = { x: 0, y: -1 };
+            moveSound.play();
     });
     document.getElementById('down').addEventListener('click', () => {
         if (inputDir.y !== -1) inputDir = { x: 0, y: 1 };
+            moveSound.play();
     });
     document.getElementById('left').addEventListener('click', () => {
         if (inputDir.x !== 1) inputDir = { x: -1, y: 0 };
+            moveSound.play();
     });
     document.getElementById('right').addEventListener('click', () => {
         if (inputDir.x !== -1) inputDir = { x: 1, y: 0 };
+            moveSound.play();
     });
 
     // Start the game
