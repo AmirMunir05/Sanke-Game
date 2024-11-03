@@ -59,7 +59,6 @@ body {
     border-radius: 15px;
     overflow: hidden; /* Ensures contents stay within rounded edges */
     margin-bottom: 20px; /* Space below the board */
-    position: relative;
 }
 
 .food, .snake, .head {
@@ -122,7 +121,6 @@ body {
     grid-template-columns: 50px 50px 50px;
     gap: 10px;
     margin-top: 10px; /* Space between board and dpad */
-    border: 2px solid red;
 }
 
 .dpad-button {

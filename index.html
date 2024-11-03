@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./assets/images/s.jpeg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/s.jpeg"
+      type="image/x-icon"
+    />
     <title>Snake Mania</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Container for game score -->
-     <div class="parent">
-
-        <div class="container">
-             <div class="score_box">
-                 <div id="score">Score : 0</div>
-                 <div id="hiscoreBox">High Score : 0</div>
-                </div>
-                <!-- Game Board -->
-                <div class="board relative">
-                    <div class="dpad">
-                        <button id="up" class="dpad-button">▲</button>
-                        <button id="left" class="dpad-button">◀</button>
-                        <button id="down" class="dpad-button">▼</button>
-                        <button id="right" class="dpad-button">▶</button>
-                    </div>
-                </div>
+    <div class="parent">
+      <div class="container">
+        <div class="score_box">
+          <div id="score">Score : 0</div>
+          <div id="hiscoreBox">High Score : 0</div>
         </div>
-            
-            <!-- On-Screen D-Pad Controller for Mobile -->
-   
-    
-</div>
+        <!-- Game Board -->
+        <div class="board"></div>
+        <div class="dpad">
+          <button id="up" class="dpad-button">▲</button>
+          <button id="left" class="dpad-button">◀</button>
+          <button id="down" class="dpad-button">▼</button>
+          <button id="right" class="dpad-button">▶</button>
+        </div>
+      </div>
+
+      <!-- On-Screen D-Pad Controller for Mobile -->
+    </div>
     <!-- JavaScript file for game logic -->
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
