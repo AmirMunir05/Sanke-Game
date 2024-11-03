@@ -6,18 +6,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./assets/images/s.jpeg" type="image/x-icon">
     <title>Snake Mania</title>
-    
 </head>
 <body>
+    <!-- Container for game score -->
     <div class="container">
         <div class="score_box">
             <div id="score">Score : 0</div>
             <div id="hiscoreBox">High Score : 0</div>
         </div>
-        <div class="board">
-
-        </div>
+        <!-- Game Board -->
+        <div class="board"></div>
     </div>
+
+    <!-- On-Screen D-Pad Controller for Mobile -->
+    <div class="dpad">
+        <button id="up" class="dpad-button">▲</button>
+        <button id="left" class="dpad-button">◀</button>
+        <button id="down" class="dpad-button">▼</button>
+        <button id="right" class="dpad-button">▶</button>
+    </div>
+
+    <!-- JavaScript file for game logic -->
+    <script src="./js/index.js"></script>
 </body>
-<script src="./js/index.js"></script>
 </html>

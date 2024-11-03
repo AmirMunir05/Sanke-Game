@@ -85,15 +85,42 @@ body {
    
 }
 
-@media (max-width: 480px) {
-    .container {
-        width: 100vmin;
-        padding: 0.5rem;
-    }
 
-    .score_box {
-        font-size: 1.2rem;
-    }
-        
+
+
+.dpad {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 10px;
 }
 
+.dpad-button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#up { grid-column: 2; }
+#left { grid-column: 1; }
+#down { grid-column: 2; }
+#right { grid-column: 3; }
+
+.dpad-button:active {
+    background-color: #555; /* Darken when pressed */
+}
+
+
+@media (min-width: 1024px) {
+    .dpad-button{
+        display:none ;
+    }
+}
