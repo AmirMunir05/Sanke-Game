@@ -112,27 +112,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Touch Controls for Mobile
-    let touchStartX = 0;
-    let touchStartY = 0;
-    document.addEventListener('touchstart', (e) => {
-        touchStartX = e.touches[0].clientX;
-        touchStartY = e.touches[0].clientY;
-    });
+    // let touchStartX = 0; 
+    // let touchStartY = 0;
+    // document.addEventListener('touchstart', (e) => {
+    //     touchStartX = e.touches[0].clientX;
+    //     touchStartY = e.touches[0].clientY;
+    // });
 
-    document.addEventListener('touchend', (e) => {
-        let touchEndX = e.changedTouches[0].clientX;
-        let touchEndY = e.changedTouches[0].clientY;
-        let diffX = touchEndX - touchStartX;
-        let diffY = touchEndY - touchStartY;
+    // document.addEventListener('touchend', (e) => {
+    //     let touchEndX = e.changedTouches[0].clientX;
+    //     let touchEndY = e.changedTouches[0].clientY;
+    //     let diffX = touchEndX - touchStartX;
+    //     let diffY = touchEndY - touchStartY;
 
-        if (Math.abs(diffX) > Math.abs(diffY)) {
-            if (diffX > 0 && inputDir.x !== -1) inputDir = { x: 1, y: 0 };
-            else if (diffX < 0 && inputDir.x !== 1) inputDir = { x: -1, y: 0 };
-        } else {
-            if (diffY > 0 && inputDir.y !== -1) inputDir = { x: 0, y: 1 };
-            else if (diffY < 0 && inputDir.y !== 1) inputDir = { x: 0, y: -1 };
-        }
-    });
+    //     if (Math.abs(diffX) > Math.abs(diffY)) {
+    //         if (diffX > 0 && inputDir.x !== -1) inputDir = { x: 1, y: 0 };
+    //         else if (diffX < 0 && inputDir.x !== 1) inputDir = { x: -1, y: 0 };
+    //     } else {
+    //         if (diffY > 0 && inputDir.y !== -1) inputDir = { x: 0, y: 1 };
+    //         else if (diffY < 0 && inputDir.y !== 1) inputDir = { x: 0, y: -1 };
+    //     }
+    // });
 
     // D-pad Controls for On-screen Buttons
     document.getElementById('up').addEventListener('click', () => {
